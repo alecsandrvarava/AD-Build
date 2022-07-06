@@ -1,0 +1,1879 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \******************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap);
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (1) ***!
+  \**********************************************************************************************************************************************************/
+@charset "UTF-8";
+/* By Athlon Front-End Team */
+/* Core variables */
+/**
+ * Variables
+*/
+/* Typography */
+/* Breakpoints */
+/* Paths */
+/* Grid setup */
+/* Colour palette */
+/* Components */
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: none;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+main {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1660px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Fonts */
+/* Mixins, helpers and functions */
+/**
+ * Helper mixins
+*/
+/* Vendor */
+/* Components */
+.header {
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+  margin-bottom: 130px;
+}
+.header::after {
+  content: "";
+  background: url(../images/design/home.f009b5.jpg) no-repeat;
+  margin-top: 128px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+}
+@media (max-width: 1660px) {
+  .header::after {
+    margin-top: calc(
+				100px + 28 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 1730px) {
+  .header::after {
+    background-size: cover;
+  }
+}
+.header__logo {
+  margin-top: 11px;
+}
+.header__nav {
+  padding-top: 23px;
+  display: grid;
+  grid-template-columns: 10.1% 1fr 17.4%;
+}
+.header__list {
+  margin-left: 140px;
+  margin-right: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 83px;
+}
+@media (max-width: 1660px) {
+  .header__list {
+    margin-left: calc(
+				45px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__list {
+    margin-right: calc(
+				20px + 25 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__list {
+    height: calc(
+				55px + 28 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__list-item {
+  position: relative;
+  z-index: 10;
+}
+.header__list-item > a {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+@media (max-width: 1660px) {
+  .header__list-item > a {
+    font-size: calc(
+				17px + 8 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__list-item > a:hover {
+  margin-top: 8px;
+  border-color: #ffe66a;
+}
+.header__sub-list {
+  position: absolute;
+  left: -10px;
+  top: 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+}
+.header__list-sub-item {
+  padding: 0 10px 15px 10px;
+}
+.header__list-sub-item > a {
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+@media (max-width: 1660px) {
+  .header__list-sub-item > a {
+    font-size: calc(
+				17px + 8 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__list-sub-item > a:hover {
+  border-color: #ffe66a;
+}
+.header__tel {
+  border: 1px solid #ffe66a;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 83px;
+}
+@media (max-width: 1660px) {
+  .header__tel {
+    height: calc(
+				55px + 28 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__tel > a {
+  font-weight: 500;
+  font-size: 25px;
+  	line-height: 30px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+@media (max-width: 1660px) {
+  .header__tel > a {
+    font-size: calc(
+				17px + 8 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__tel > a {
+    	line-height: calc(
+				20px + 10 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__tel > a:hover {
+  color: #ffe66a;
+}
+.header__block-title {
+  position: relative;
+  top: -20px;
+  width: 1330px;
+  margin-left: auto;
+  margin-right: 84px;
+  padding-bottom: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 1660px) {
+  .header__block-title {
+    width: calc(
+				800px + 530 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__block-title {
+    margin-right: calc(
+				45px + 39 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__block-title {
+    padding-bottom: calc(
+				200px + 190 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 25px;
+  text-align: right;
+  color: #fff;
+}
+@media (max-width: 1660px) {
+  .header__title {
+    font-size: calc(
+				38px + 26 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__title {
+    line-height: calc(
+				50px + 28 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__title {
+    margin-bottom: calc(
+				20px + 5 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__btn button {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: #000;
+  background: linear-gradient(182.39deg, #ffe66a 9.7%, #f2af4b 98%);
+  border-radius: 15px;
+  border: none;
+  padding: 15px 60px 18px 74px;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+@media (max-width: 1660px) {
+  .header__btn button {
+    font-size: calc(
+				24px + 4 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__btn button:hover {
+  background: linear-gradient(182.39deg, #fee983 9.7%, #fcd08c 98%);
+}
+.header__btn button:active {
+  background: linear-gradient(182.39deg, #ffe66a 9.7%, #f2af4b 98%);
+}
+.header__socials {
+  position: fixed;
+  right: 58px;
+  bottom: 100px;
+  width: 115px;
+  height: 115px;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+  cursor: pointer;
+}
+@media (max-width: 1660px) {
+  .header__socials {
+    width: calc(
+				65px + 50 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .header__socials {
+    height: calc(
+				65px + 50 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.header__socials img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__socials:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.box {
+  max-width: 1709px;
+  margin: auto;
+}
+
+.services-gallery {
+  padding: 10px;
+}
+
+.first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    margin-bottom: 0;
+    margin-bottom: calc(5px + 16 * ((100vw - 0px) / 1728));
+  }
+}
+@media (min-width: 767px) {
+  .first-row {
+    margin-bottom: calc(6px + 2 * ((100vw - 767px) / 961));
+  }
+}
+@media (max-width: 1660px) {
+  .first-row {
+    gap: calc(
+				7px + 3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.first-row a:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 690px;
+          flex: 1 1 690px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  min-height: 150px;
+}
+@media (min-width: 768px) {
+  .first-row a:nth-child(1) {
+    height: 408px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1660px) {
+  .first-row a:nth-child(1) {
+    height: calc(
+				285.6px + 122.4 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(1) {
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(1) img {
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(1)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .first-row a:nth-child(1)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(1)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(1)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(1)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(1)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(1)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(1)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(1):hover::after {
+  opacity: 1;
+}
+.first-row a:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1009px;
+          flex: 1 1 1009px;
+  cursor: pointer;
+  position: relative;
+  min-height: 150px;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .first-row a:nth-child(2) {
+    height: 287px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1660px) {
+  .first-row a:nth-child(2) {
+    height: calc(
+				200.9px + 86.1 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(2) {
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(2) img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(2) img {
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(2)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .first-row a:nth-child(2)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(2)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(2)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(2)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(2)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .first-row a:nth-child(2)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .first-row a:nth-child(2)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0px;
+  }
+}
+.first-row a:nth-child(2):hover::after {
+  opacity: 1;
+}
+
+.second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .second-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 1660px) {
+  .second-row {
+    gap: calc(
+				7px + 3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.second-row__first-column {
+  width: 394px;
+  height: 683px;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 1660px) {
+  .second-row__first-column {
+    width: calc(
+				276px + 118 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .second-row__first-column {
+    height: calc(
+				478.1px + 204.9 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__first-column {
+    height: 150px;
+    width: 100%;
+  }
+}
+.second-row__first-column img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__first-column::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__first-column::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 30px;
+    padding-right: 42px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-column::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-column::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-column::after {
+    padding-left: calc(
+				15px + 15 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-column::after {
+    padding-right: calc(
+				15px + 27 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-column::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__first-column::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+.second-row__first-column:hover::after {
+  opacity: 1;
+}
+.second-row__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 1660px) {
+  .second-row__first-row {
+    gap: calc(
+				7px + 3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+    margin-bottom: calc(12px + 19 * ((100vw - 320px) / 1408));
+  }
+}
+.second-row__first-row a:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 285px;
+          flex: 1 1 285px;
+  height: 292px;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1) {
+    height: calc(
+				204.4px + 87.6 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__first-row a:nth-child(1) {
+    min-height: 150px;
+  }
+}
+.second-row__first-row a:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__first-row a:nth-child(1)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__first-row a:nth-child(1)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 30px;
+    padding-right: 42px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1)::after {
+    padding-left: calc(
+				15px + 15 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1)::after {
+    padding-right: calc(
+				15px + 27 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(1)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__first-row a:nth-child(1)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+.second-row__first-row a:nth-child(1):hover::after {
+  opacity: 1;
+}
+.second-row__first-row a:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 330px;
+          flex: 1 1 330px;
+  height: 413px;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2) {
+    height: calc(
+				289.1px + 123.9 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__first-row a:nth-child(2) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .second-row__first-row a:nth-child(2) {
+    top: -121px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2) {
+    top: calc(
+				-84.7px + -36.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.second-row__first-row a:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__first-row a:nth-child(2)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__first-row a:nth-child(2)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 30px;
+    padding-right: 42px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2)::after {
+    padding-left: calc(
+				15px + 15 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2)::after {
+    padding-right: calc(
+				15px + 27 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(2)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__first-row a:nth-child(2)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+.second-row__first-row a:nth-child(2):hover::after {
+  opacity: 1;
+}
+.second-row__first-row a:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 669px;
+          flex: 1 1 669px;
+  height: 413px;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3) {
+    height: calc(
+				289.1px + 123.9 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__first-row a:nth-child(3) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .second-row__first-row a:nth-child(3) {
+    top: -121px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3) {
+    top: calc(
+				-84.7px + -36.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.second-row__first-row a:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__first-row a:nth-child(3)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__first-row a:nth-child(3)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__first-row a:nth-child(3)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__first-row a:nth-child(3)::after {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+  }
+}
+.second-row__first-row a:nth-child(3):hover::after {
+  opacity: 1;
+}
+.second-row__second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 1660px) {
+  .second-row__second-row {
+    gap: calc(
+				7px + 3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__second-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    margin-bottom: calc(4.5px + 16.5 * ((100vw - 0px) / 1728));
+  }
+}
+.second-row__second-row a:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 855px;
+          flex: 1 1 855px;
+  cursor: pointer;
+  position: relative;
+  height: 381px;
+}
+@media (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1) {
+    height: calc(
+				266.7px + 114.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__second-row a:nth-child(1) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .second-row__second-row a:nth-child(1) {
+    top: -111px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1) {
+    top: calc(
+				-77.7px + -33.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.second-row__second-row a:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__second-row a:nth-child(1)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__second-row a:nth-child(1)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(1)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__second-row a:nth-child(1)::after {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+  }
+}
+.second-row__second-row a:nth-child(1):hover::after {
+  opacity: 1;
+}
+.second-row__second-row a:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 439px;
+          flex: 1 1 439px;
+  cursor: pointer;
+  position: relative;
+  height: 381px;
+}
+@media (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2) {
+    height: calc(
+				266.7px + 114.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .second-row__second-row a:nth-child(2) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .second-row__second-row a:nth-child(2) {
+    top: -111px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2) {
+    top: calc(
+				-77.7px + -33.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.second-row__second-row a:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-row__second-row a:nth-child(2)::after {
+  content: "";
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .second-row__second-row a:nth-child(2)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 30px;
+    padding-right: 42px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2)::after {
+    padding-left: calc(
+				15px + 15 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2)::after {
+    padding-right: calc(
+				15px + 27 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .second-row__second-row a:nth-child(2)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .second-row__second-row a:nth-child(2)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+.second-row__second-row a:nth-child(2):hover::after {
+  opacity: 1;
+}
+
+.third-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  gap: 10px;
+}
+@media (max-width: 1660px) {
+  .third-row {
+    gap: calc(
+				7px + 3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .third-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+  }
+}
+.third-row a:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 589px;
+          flex: 1 1 589px;
+  cursor: pointer;
+  position: relative;
+  height: 271px;
+}
+@media (max-width: 1660px) {
+  .third-row a:nth-child(1) {
+    height: calc(
+				189.7px + 81.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .third-row a:nth-child(1) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(1) {
+    top: -101px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1) {
+    top: calc(
+				-70.7px + -30.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.third-row a:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.third-row a:nth-child(1)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(1)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(1)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .third-row a:nth-child(1)::after {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+  }
+}
+.third-row a:nth-child(1):hover::after {
+  opacity: 1;
+}
+.third-row a:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 514px;
+          flex: 1 1 514px;
+  cursor: pointer;
+  position: relative;
+  height: 271px;
+}
+@media (max-width: 1660px) {
+  .third-row a:nth-child(2) {
+    height: calc(
+				189.7px + 81.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .third-row a:nth-child(2) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(2) {
+    top: -101px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2) {
+    top: calc(
+				-70.7px + -30.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.third-row a:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.third-row a:nth-child(2)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(2)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(2)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .third-row a:nth-child(2)::after {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+.third-row a:nth-child(2):hover::after {
+  opacity: 1;
+}
+.third-row a:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 585px;
+          flex: 1 1 585px;
+  cursor: pointer;
+  position: relative;
+  height: 271px;
+}
+@media (max-width: 1660px) {
+  .third-row a:nth-child(3) {
+    height: calc(
+				189.7px + 81.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (max-width: 767px) {
+  .third-row a:nth-child(3) {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(3) {
+    top: -101px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3) {
+    top: calc(
+				-70.7px + -30.3 * ((100vw - 991px) / 669)
+			);
+  }
+}
+.third-row a:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.third-row a:nth-child(3)::after {
+  content: "Кузовний ремонт від 5000 грн";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.1) 85%);
+  font-weight: 700;
+  font-size: calc(18px + 5 * ((100vw - 320px) / 1408));
+  padding-top: calc(15px + 5 * ((100vw - 320px) / 1408));
+  padding-left: calc(20px + 10 * ((100vw - 320px) / 1408));
+  padding-right: calc(15px + 5 * ((100vw - 320px) / 1408));
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+}
+@media (min-width: 767px) {
+  .third-row a:nth-child(3)::after {
+    font-size: 34px;
+    padding-top: 39px;
+    padding-left: 200px;
+    padding-right: 52px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3)::after {
+    font-size: calc(
+				21px + 13 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3)::after {
+    padding-top: calc(
+				25px + 14 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3)::after {
+    padding-left: calc(
+				105px + 95 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3)::after {
+    padding-right: calc(
+				32px + 20 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 767px) and (max-width: 1660px) {
+  .third-row a:nth-child(3)::after {
+    line-height: calc(
+				30px + 11 * ((100vw - 991px) / 669)
+			);
+  }
+}
+@media (min-width: 991px) {
+  .third-row a:nth-child(3)::after {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+  }
+}
+.third-row a:nth-child(3):hover::after {
+  opacity: 1;
+}
+
+/* Demo Page styles */
