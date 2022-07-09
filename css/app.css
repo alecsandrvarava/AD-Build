@@ -2315,7 +2315,7 @@ input {
 @media (max-width: 1660px) {
   .team__sub-title {
     margin-bottom: calc(
-				50px + 30 * ((100vw - 320px) / 1340)
+				45px + 35 * ((100vw - 320px) / 1340)
 			);
   }
 }
@@ -2342,6 +2342,7 @@ input {
   .team__items {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin-left: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 1660px) {
@@ -2351,14 +2352,33 @@ input {
 			);
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1660px) {
+  .team__items {
+    margin-left: calc(
+				0px + 100 * ((100vw - 768px) / 892)
+			);
+  }
+}
+.team__item {
+  width: 90%;
+  margin: 0 auto 45px auto;
+}
+@media (min-width: 768px) {
   .team__item {
-    width: 90%;
-    margin: 0 auto 40px auto;
+    width: 100%;
+    margin: 0 auto 0px auto;
   }
 }
 .team__img {
   margin: auto;
+  width: 300px;
+}
+@media (max-width: 1660px) {
+  .team__img {
+    width: calc(
+				280px + 20 * ((100vw - 320px) / 1340)
+			);
+  }
 }
 @media (min-width: 768px) {
   .team__img {
@@ -2372,18 +2392,6 @@ input {
 			);
   }
 }
-@media (max-width: 767px) {
-  .team__img {
-    width: 399px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__img {
-    width: calc(
-				280px + 119 * ((100vw - 768px) / 892)
-			);
-  }
-}
 .team__btn-name {
   font-weight: 500;
   line-height: 32px;
@@ -2392,7 +2400,12 @@ input {
   border-radius: 7px;
   text-align: center;
   cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: 17px;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   z-index: 5;
 }
@@ -2403,11 +2416,30 @@ input {
 			);
   }
 }
+@media (max-width: 1660px) {
+  .team__btn-name {
+    font-size: calc(
+				17px + 5 * ((100vw - 767px) / 893)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .team__btn-name {
+    padding-top: calc(
+				8px + 2 * ((100vw - 767px) / 893)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .team__btn-name {
+    padding-bottom: calc(
+				9px + 1 * ((100vw - 767px) / 893)
+			);
+  }
+}
 @media (min-width: 768px) {
   .team__btn-name {
     font-size: 26px;
-    padding-left: 49px;
-    padding-right: 49px;
     padding-top: 16px;
     padding-bottom: 19px;
   }
@@ -2421,57 +2453,15 @@ input {
 }
 @media (min-width: 768px) and (max-width: 1660px) {
   .team__btn-name {
-    padding-left: calc(
-				5px + 44 * ((100vw - 768px) / 892)
-			);
-  }
-}
-@media (min-width: 768px) and (max-width: 1660px) {
-  .team__btn-name {
-    padding-right: calc(
-				5px + 44 * ((100vw - 768px) / 892)
-			);
-  }
-}
-@media (min-width: 768px) and (max-width: 1660px) {
-  .team__btn-name {
     padding-top: calc(
-				8px + 8 * ((100vw - 768px) / 892)
+				8px + 8 * ((100vw - 767px) / 893)
 			);
   }
 }
 @media (min-width: 768px) and (max-width: 1660px) {
   .team__btn-name {
     padding-bottom: calc(
-				9px + 10 * ((100vw - 768px) / 892)
-			);
-  }
-}
-@media (max-width: 767px) {
-  .team__btn-name {
-    font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__btn-name {
-    font-size: calc(
-				20px + 2 * ((100vw - 768px) / 892)
-			);
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__btn-name {
-    padding-top: calc(
-				8px + 2 * ((100vw - 768px) / 892)
-			);
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__btn-name {
-    padding-bottom: calc(
-				9px + 1 * ((100vw - 768px) / 892)
+				9px + 10 * ((100vw - 767px) / 893)
 			);
   }
 }
@@ -2504,8 +2494,16 @@ input {
   justify-items: center;
 }
 .team__socials img {
+  width: 60px;
   -webkit-transition: 0.15s all;
   transition: 0.15s all;
+}
+@media (max-width: 1660px) {
+  .team__socials img {
+    width: calc(
+				50px + 10 * ((100vw - 320px) / 1340)
+			);
+  }
 }
 @media (min-width: 768px) {
   .team__socials img {
@@ -2519,28 +2517,32 @@ input {
 			);
   }
 }
-@media (max-width: 767px) {
-  .team__socials img {
-    width: 60px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__socials img {
-    width: calc(
-				50px + 10 * ((100vw - 320px) / 1340)
-			);
-  }
-}
 .team__socials img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 .team__text {
   font-weight: 400;
-  font-size: 36px;
   color: #000;
   position: relative;
   text-align: center;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 1660px) {
+  .team__text {
+    font-size: calc(
+				16px + 4 * ((100vw - 320px) / 1340)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .team__text {
+    line-height: calc(
+				20px + 4 * ((100vw - 320px) / 1340)
+			);
+  }
 }
 @media (min-width: 768px) {
   .team__text {
@@ -2548,12 +2550,13 @@ input {
     line-height: 44px;
     margin-top: 76px;
     text-align: left;
+    padding: 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 1660px) {
   .team__text {
     font-size: calc(
-				18px + 18 * ((100vw - 768px) / 892)
+				17px + 19 * ((100vw - 767px) / 893)
 			);
   }
 }
@@ -2571,27 +2574,6 @@ input {
 			);
   }
 }
-@media (max-width: 767px) {
-  .team__text {
-    padding: 0 10px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__text {
-    font-size: calc(
-				16px + 4 * ((100vw - 320px) / 1340)
-			);
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__text {
-    line-height: calc(
-				20px + 4 * ((100vw - 320px) / 1340)
-			);
-  }
-}
 .team__text::before {
   content: "";
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAzIiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMTAzIDg4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPHBhdGggZD0iTTM2LjU0NCA0MC43NTJDNDAuODEwNyA0Mi42MjkzIDQ0LjEzODcgNDUuNDQ1MyA0Ni41MjggNDkuMkM0OC45MTczIDUyLjk1NDcgNTAuMTEyIDU3LjM5MiA1MC4xMTIgNjIuNTEyQzUwLjExMiA2OS44NTA3IDQ3LjgwOCA3NS44MjQgNDMuMiA4MC40MzJDMzguNTkyIDg0Ljg2OTMgMzIuNzA0IDg3LjA4OCAyNS41MzYgODcuMDg4QzE4LjM2OCA4Ny4wODggMTIuMzk0NyA4NC43ODQgNy42MTYgODAuMTc2QzMuMDA4IDc1LjU2OCAwLjcwNCA2OS42OCAwLjcwNCA2Mi41MTJDMC43MDQgNTkuMDk4NyAxLjEzMDY3IDU1LjY4NTMgMS45ODQgNTIuMjcyQzIuODM3MzMgNDguODU4NyA0LjcxNDY3IDQzLjczODcgNy42MTYgMzYuOTEyTDIyLjQ2NCAwLjA0Nzk4ODlINDcuODA4TDM2LjU0NCA0MC43NTJaTTg5LjAwNCA0MC43NTJDOTMuMjcwNyA0Mi42MjkzIDk2LjU5ODcgNDUuNDQ1MyA5OC45ODggNDkuMkMxMDEuMzc3IDUyLjk1NDcgMTAyLjU3MiA1Ny4zOTIgMTAyLjU3MiA2Mi41MTJDMTAyLjU3MiA2OS44NTA3IDEwMC4yNjggNzUuODI0IDk1LjY2IDgwLjQzMkM5MS4wNTIgODQuODY5MyA4NS4xNjQgODcuMDg4IDc3Ljk5NiA4Ny4wODhDNzAuODI4IDg3LjA4OCA2NC44NTQ3IDg0Ljc4NCA2MC4wNzYgODAuMTc2QzU1LjQ2OCA3NS41NjggNTMuMTY0IDY5LjY4IDUzLjE2NCA2Mi41MTJDNTMuMTY0IDU5LjA5ODcgNTMuNTkwNyA1NS42ODUzIDU0LjQ0NCA1Mi4yNzJDNTUuMjk3MyA0OC44NTg3IDU3LjE3NDcgNDMuNzM4NyA2MC4wNzYgMzYuOTEyTDc0LjkyNCAwLjA0Nzk4ODlIMTAwLjI2OEw4OS4wMDQgNDAuNzUyWiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzcxXzY5KSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4NCjxkZWZzPg0KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzcxXzY5IiB4MT0iNTIuMTE5MyIgeTE9Ii0zMi45NjMiIHgyPSIyMS4zODM0IiB5Mj0iMjUwLjY4MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPg0KPHN0b3Agc3RvcC1jb2xvcj0iI0ZGRUI4QSIvPg0KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDNDZBIi8+DQo8L2xpbmVhckdyYWRpZW50Pg0KPC9kZWZzPg0KPC9zdmc+DQo=) no-repeat;
@@ -2599,11 +2581,27 @@ input {
   width: 103px;
   height: 88px;
   position: absolute;
+  top: -62px;
+  left: -4px;
 }
 @media (max-width: 1660px) {
   .team__text::before {
     width: calc(
 				40px + 63 * ((100vw - 320px) / 1340)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .team__text::before {
+    top: calc(
+				-16px + -46 * ((100vw - 320px) / 1340)
+			);
+  }
+}
+@media (max-width: 1660px) {
+  .team__text::before {
+    left: calc(
+				-8px + 4 * ((100vw - 320px) / 1340)
 			);
   }
 }
@@ -2624,26 +2622,6 @@ input {
   .team__text::before {
     left: calc(
 				-48.5px + -28.5 * ((100vw - 767px) / 893)
-			);
-  }
-}
-@media (max-width: 767px) {
-  .team__text::before {
-    top: -62px;
-    left: -4px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__text::before {
-    top: calc(
-				-16px + -46 * ((100vw - 320px) / 1340)
-			);
-  }
-}
-@media (max-width: 767px) and (max-width: 1660px) {
-  .team__text::before {
-    left: calc(
-				-8px + 4 * ((100vw - 320px) / 1340)
 			);
   }
 }
