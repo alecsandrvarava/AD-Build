@@ -1,0 +1,8 @@
+.map {
+	margin-bottom: 41px;
+	& iframe {
+		width: 100%;
+		height: 546px;
+		@include adaptive-value("height", 546, 350, 320, 1);
+	}
+}
