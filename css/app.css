@@ -413,12 +413,12 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 390px) {
   .header__logo {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 410px) {
   .header__logo {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -986,12 +986,12 @@ select:-webkit-autofill:focus {
 @media (min-width: 390px) {
   .header__tel {
     padding: 11px 10px 11px 11px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 410px) {
   .header__tel {
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 11px 20px 11px 20px;
   }
 }
@@ -1632,12 +1632,12 @@ select:-webkit-autofill:focus {
 }
 @media (max-width: 992px) and (min-width: 390px) {
   .menu__burger {
-    top: 54px;
+    top: 44px;
   }
 }
 @media (max-width: 992px) and (min-width: 410px) {
   .menu__burger {
-    top: 74px;
+    top: 64px;
   }
 }
 @media (max-width: 992px) {
