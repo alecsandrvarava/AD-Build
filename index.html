@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
   <body>
+		
 		<div class="wrapper">
 
 			<header class="header">
@@ -59,10 +60,13 @@
 								<a href="tel:+380686915157">+38 068 691 51 57</a>
 								<a href="tel:+380506365462">+38 050 636 54 62</a>
 							</div>
+							<div class="menu__burger hidden">
+								<span></span>
+							</div>
 						</nav>
-						<div class="menu__burger hidden">
+						<!-- <div class="menu__burger hidden">
 							<span></span>
-						</div>
+						</div> -->
 					</div>
 					
 					<div class="header__block-title">
@@ -918,6 +922,269 @@
 						</div>
 					</div>
 				
+				</section>
+
+				<section class="constructor">
+					<div class="container ">
+						<div class="constructor__border">
+							<div class="constructor__title sub-title">Підібрати автомобіль</div>
+							<div class="constructor__form">
+								<div class="constructor__flex-box">
+									<div class="constructor__radio-cars">
+										<div class="constructor__radio-car">
+											<input checked type="radio" name="cars" id="sedan" value="sedan">
+											<label for="sedan">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_sedan.svg" alt="">
+													</div>
+												</div>
+												<p>Седан</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="hatchback" value="hatchback">
+											<label for="hatchback">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_hatchback.svg" alt="">
+													</div>
+												</div>
+												<p>Хетчбек</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="сrossover" value="сrossover">
+											<label for="сrossover">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_сrossover.svg" alt="">
+													</div>
+												</div>
+												<p>Кросовер</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="SUV" value="SUV">
+											<label for="SUV">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_SUV.svg" alt="">
+													</div>
+												</div>
+												<p>Позашляховик</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="supercar" value="supercar">
+											<label for="supercar">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_supercar.svg" alt="">
+													</div>
+												</div>
+												<p>Суперкар</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="cupe" value="cupe">
+											<label for="cupe">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_cupe.svg" alt="">
+													</div>
+												</div>
+												<p>Купе</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="сabriolet" value="сabriolet">
+											<label for="сabriolet">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_сabriolet.svg" alt="">
+													</div>
+												</div>
+												<p>Кабріолет</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="pickup" value="pickup">
+											<label for="pickup">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img">
+														<img src="./images/content/constructor_pickup.svg" alt="">
+													</div>
+												</div>
+												<p>Пікап</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="minivan" value="minivan">
+											<label for="minivan">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img radio-car-img-minivan">
+														<img src="./images/content/constructor_minivan.svg" alt="">
+													</div>
+												</div>
+												<p>Мінівен</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="limousine" value="limousine">
+											<label for="limousine">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img radio-car-img-limousine">
+														<img src="./images/content/constructor_limousine.svg" alt="">
+													</div>
+												</div>
+												<p>Лімузин</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="smart" value="smart">
+											<label for="smart">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img radio-car-img-smart">
+														<img src="./images/content/constructor_smart.svg" alt="">
+													</div>
+												</div>
+												<p>Смарт</p>
+											</label>
+										</div>
+										<div class="constructor__radio-car">
+											<input type="radio" name="cars" id="moto" value="moto">
+											<label for="moto">
+												<div>
+													<div class="constructor__circle"></div>
+													<div class="constructor__radio-car-img radio-car-img-moto">
+														<img src="./images/content/constructor_moto.svg" alt="">
+													</div>
+												</div>
+												<p>Мото</p>
+											</label>
+										</div>
+									</div>
+									<div class="constructor__box">
+										<div class="constructor__box-fuel">
+											<div class="constructor__radio-fuel-title">Тип палива</div>
+											<div class="constructor__radio-fuels">
+												<div class="constructor__radio-fuel">
+													<input checked type="radio" name="fuel" id="gasoline" value="gasoline">
+													<label for="gasoline">
+														<div>
+															<p>Бензин</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-fuel">
+													<input type="radio" name="fuel" id="hybrid" value="hybrid">
+													<label for="hybrid">
+														<div>
+															<p>Гібрид</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-fuel">
+													<input type="radio" name="fuel" id="electro" value="electro">
+													<label for="electro">
+														<div>
+															<p>Електро</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-fuel">
+													<input type="radio" name="fuel" id="diesel" value="diesel">
+													<label for="diesel">
+														<div>
+															<p>Дизель</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-fuel">
+													<input type="radio" name="fuel" id="gas" value="gas">
+													<label for="gas">
+														<div>
+															<p>Газ</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-fuel">
+													<input type="radio" name="fuel" id="gas-gasoline" value="gas-gasoline">
+													<label for="gas-gasoline">
+														<div>
+															<p>Газ + бензин</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__box-price">
+											<div class="constructor__radio-price-title">Ціна, $</div>
+											<div class="constructor__radio-prices">
+												<div class="constructor__radio-price">
+													<input checked type="radio" name="price" id="to_10000" value="to_10000">
+													<label for="to_10000">
+														<div>
+															<p>до 10 000</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-price">
+													<input type="radio" name="price" id="to_15000" value="to_15000">
+													<label for="to_15000">
+														<div>
+															<p>до 15 000</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-price">
+													<input type="radio" name="price" id="to_20000" value="to_20000">
+													<label for="to_20000">
+														<div>
+															<p>до 20 000</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+												<div class="constructor__radio-price">
+													<input type="radio" name="price" id="to_20000+" value="to_20000+">
+													<label for="to_20000+">
+														<div>
+															<p>20 000+</p>
+															<div class="constructor__circle-fuel"></div>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__btn">
+									<button>Проконсультуватись</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<section class="qr-links">
