@@ -14706,7 +14706,7 @@ select:-webkit-autofill:focus {
     width: 500px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .modal-container .thanks-window {
     width: 80%;
     height: 400px;
@@ -14781,6 +14781,8 @@ select:-webkit-autofill:focus {
   opacity: 0;
   visibility: hidden;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
   left: 0;
   top: 0;
   width: 100%;
@@ -14807,16 +14809,8 @@ select:-webkit-autofill:focus {
   cursor: pointer;
 }
 .modal .modal-window {
-  border-radius: 30px;
-  position: relative;
-  background-color: black;
-  margin: 0 auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 994px;
-  height: 470px;
-  z-index: 99999;
+  width: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14826,10 +14820,14 @@ select:-webkit-autofill:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+.modal .modal-window .modal-window-container {
+  border-radius: 30px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 994px;
+  height: 470px;
+  z-index: 99999;
 }
 .modal .modal-window .close-modal-window-black {
   position: absolute;
@@ -14913,6 +14911,7 @@ select:-webkit-autofill:focus {
 
 .modal-form {
   width: 815px;
+  margin: auto;
 }
 
 .inputs-container {
@@ -15036,18 +15035,22 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: 1023px) {
-  .modal .modal-window {
+  .modal .modal-window .modal-window-container {
     width: 730px;
+  }
+  .modal-input {
+    width: 380px;
+    padding-right: 50px;
   }
   .subtitle-modal {
     font-size: 24px;
   }
   .inputs-container {
-    width: 680px;
+    width: 600px;
     margin: auto;
   }
   .radio-container {
-    width: 680px;
+    width: 730px;
     margin: auto;
   }
   .radio-width {
@@ -15060,11 +15063,22 @@ select:-webkit-autofill:focus {
     padding: 12px 25px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .modal .modal-window {
+    width: auto;
+  }
+  .modal .modal-window .modal-form {
+    width: auto;
+  }
+  .modal .modal-window .radio-container {
+    width: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .modal .modal-window .modal-window-container {
     padding: 15px;
     width: 90%;
-    height: 75%;
+    height: 650px;
   }
   .modal .modal-window .close-modal-window-black {
     width: 25px;
@@ -15106,8 +15120,6 @@ select:-webkit-autofill:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
   }
   .modal .radio-container .icons {
     height: 45px;
@@ -15122,7 +15134,8 @@ select:-webkit-autofill:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 44%;
+    margin: auto;
+    width: 100%;
   }
   .modal .radio p {
     text-align: left;
@@ -15134,7 +15147,6 @@ select:-webkit-autofill:focus {
     font-size: 14px;
   }
   .modal .radio-width {
-    width: 295px;
     padding-right: 20px;
     margin-bottom: 8px;
   }
@@ -15151,11 +15163,6 @@ select:-webkit-autofill:focus {
   }
 }
 @media (max-width: 410px) {
-  .modal .modal-window {
-    padding: 15px;
-    width: 90%;
-    height: 75%;
-  }
   .modal .modal-btn {
     margin-top: 10px;
   }
@@ -15167,32 +15174,6 @@ select:-webkit-autofill:focus {
     font-size: 19px;
     margin-top: 15px;
     padding-top: 0;
-  }
-  .modal .inputs-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .modal .modal-input {
-    width: 100%;
-    padding-top: 9px;
-  }
-  .modal .modal-text {
-    margin-bottom: 15px;
-  }
-  .modal .radio-container {
-    padding-top: 26px;
-    margin-bottom: 5px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
   }
   .modal .radio-container .icons {
     height: 45px;
@@ -15207,7 +15188,6 @@ select:-webkit-autofill:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 40%;
   }
   .modal .radio p {
     text-align: left;
@@ -15234,10 +15214,8 @@ select:-webkit-autofill:focus {
   }
 }
 @media (max-width: 390px) {
-  .modal .modal-window {
-    padding: 5px;
-    width: 90%;
-    height: 80%;
+  .modal .modal-window .modal-window-container {
+    height: 580px;
   }
   .modal .subtitle-modal {
     font-size: 17px;
@@ -15251,7 +15229,6 @@ select:-webkit-autofill:focus {
             flex-direction: column;
   }
   .modal .modal-input {
-    width: 220px;
     padding-top: 9px;
   }
   .modal .modal-input input {
@@ -15278,15 +15255,6 @@ select:-webkit-autofill:focus {
   .modal .radio-container {
     padding-top: 26px;
     margin-bottom: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
   }
   .modal .radio-container .icons {
     height: 38px;
@@ -15301,7 +15269,6 @@ select:-webkit-autofill:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 37%;
     margin-bottom: 2px;
   }
   .modal .radio p {
@@ -15332,11 +15299,6 @@ select:-webkit-autofill:focus {
   }
 }
 @media (max-width: 350px) {
-  .modal .modal-window {
-    padding: 5px;
-    width: 90%;
-    height: 85%;
-  }
   .modal .subtitle-modal {
     font-size: 17px;
     margin-top: 15px;
@@ -15349,7 +15311,6 @@ select:-webkit-autofill:focus {
             flex-direction: column;
   }
   .modal .modal-input {
-    width: 220px;
     padding-top: 9px;
   }
   .modal .modal-input input {
@@ -15376,15 +15337,6 @@ select:-webkit-autofill:focus {
   .modal .radio-container {
     padding-top: 26px;
     margin-bottom: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
   }
   .modal .radio-container .icons {
     height: 40px;
@@ -15399,7 +15351,6 @@ select:-webkit-autofill:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 25%;
   }
   .modal .radio p {
     text-align: left;
@@ -15412,100 +15363,6 @@ select:-webkit-autofill:focus {
     font-size: 14px;
   }
   .modal .radio-width {
-    width: 260px;
-    padding-right: 15px;
-    margin-bottom: 3px;
-  }
-  .modal .modal-btn button {
-    width: auto;
-    height: auto;
-    padding: 9px 20px;
-    font-size: 19px;
-  }
-  .modal .modal-bottom-text {
-    font-size: 13px;
-    text-align: center;
-    padding: 3px 0 30px 0;
-  }
-}
-@media (max-width: 300px) {
-  .modal .modal-window {
-    padding: 5px;
-    width: 90%;
-    height: 85%;
-  }
-  .modal .subtitle-modal {
-    font-size: 17px;
-    margin-top: 15px;
-    padding-top: 0;
-  }
-  .modal .inputs-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .modal .modal-input {
-    width: 220px;
-    padding-top: 9px;
-  }
-  .modal .modal-input input {
-    font-size: 15px;
-  }
-  .modal .modal-input input::-webkit-input-placeholder {
-    font-size: 15px;
-  }
-  .modal .modal-input input::-moz-placeholder {
-    font-size: 15px;
-  }
-  .modal .modal-input input:-ms-input-placeholder {
-    font-size: 15px;
-  }
-  .modal .modal-input input::-ms-input-placeholder {
-    font-size: 15px;
-  }
-  .modal .modal-input input::placeholder {
-    font-size: 15px;
-  }
-  .modal .modal-text {
-    margin-bottom: 15px;
-  }
-  .modal .radio-container {
-    padding-top: 26px;
-    margin-bottom: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
-  }
-  .modal .radio-container .icons {
-    height: 40px;
-  }
-  .modal .radio-container .request__radio label {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .modal .radio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 18%;
-  }
-  .modal .radio p {
-    text-align: left;
-  }
-  .modal .radio-text {
-    font-size: 14px;
-  }
-  .modal .radio-width {
-    width: 220px;
     padding-right: 15px;
     margin-bottom: 3px;
   }
