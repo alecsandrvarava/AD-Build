@@ -11935,7 +11935,12 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 1600px) {
   .swiper {
-    height: 690px;
+    height: 480px;
+  }
+}
+@media (min-width: 1700px) {
+  .swiper {
+    height: 577px;
   }
 }
 
@@ -12276,14 +12281,6 @@ select:-webkit-autofill:focus {
 @media (min-width: 768px) {
   .slider-item__img {
     height: 350px;
-    width: 600px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1660px) {
-  .slider-item__img {
-    width: calc(
-				364px + 236 * ((100vw - 768px) / 892)
-			);
   }
 }
 @media (min-width: 1024px) {
@@ -12292,9 +12289,10 @@ select:-webkit-autofill:focus {
     width: 350px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   .slider-item__img {
-    height: 563px;
+    height: 450px;
+    width: 450px;
   }
 }
 .slider-item__img img {
@@ -12399,7 +12397,7 @@ select:-webkit-autofill:focus {
     max-height: 250px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   .slider-item-text__text {
     max-height: 400px;
   }
@@ -15078,7 +15076,7 @@ select:-webkit-autofill:focus {
   .modal .modal-window .modal-window-container {
     padding: 15px;
     width: 90%;
-    height: 650px;
+    height: 620px;
   }
   .modal .modal-window .close-modal-window-black {
     width: 25px;
@@ -15216,7 +15214,7 @@ select:-webkit-autofill:focus {
 }
 @media (max-width: 390px) {
   .modal .modal-window .modal-window-container {
-    height: 580px;
+    height: 560px;
   }
   .modal .subtitle-modal {
     font-size: 17px;
