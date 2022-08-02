@@ -15106,6 +15106,7 @@ select:-webkit-autofill:focus {
   .modal .modal-input {
     width: 100%;
     padding-top: 9px;
+    padding-right: 0px;
   }
   .modal .modal-text {
     margin-bottom: 20px;
